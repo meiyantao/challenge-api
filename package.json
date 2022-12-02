@@ -1,0 +1,39 @@
+{
+  "name": "channlchallenge",
+  "version": "1.0.0",
+  "description": "A challenge of channl",
+  "main": "app.ts",
+  "scripts": {
+    "start": "ts-node app.ts",
+    "test": "cross-env TS_NODE_PROJECT='./test/tsconfig.test.json' mocha ./test/testApi.ts"
+  },
+  "mocha": {
+    "require": [
+      "ts-node/register",
+      "tsconfig-paths/register"
+    ]
+  },
+  "keywords": [
+    "channl",
+    "mysql"
+  ],
+  "author": "meiyantao",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.1.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^12.0.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "request-promise": "^4.2.6",
+    "sequelize": "^6.26.0"
+  }
+}

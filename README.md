@@ -1,0 +1,11 @@
+### 下载依赖包
+    npm i
+### 启动服务准备
+* 服务连接数据库为mysql，可以运行**doc/challenge.sql**来创建数据库和表
+* 修改项目中连接数据库配置，分别在**src/connection/connect.ts**和**test/testUtil.ts**中。
+### 启动服务
+    npm start
+### 测试api功能
+    npm test
+### 调用api
+* 使用postman，按照**doc/api.md**中的说明进行调用
